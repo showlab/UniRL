@@ -29,10 +29,6 @@ from transformers import AutoTokenizer
 import torch.nn.functional as F
 from models.training_utils import set_seed
 import json
-
-from xfinders import examples
-from xfinders.helpers import DataProcessor
-from xfinders.modules import Comparator, Extractor
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline 
 
 from evaluate_imgs import evaluate_image
