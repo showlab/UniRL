@@ -3,12 +3,12 @@ wandb:
 #  run_id: askkz9i2
   resume: 'auto'
   use_wandb: true
-  wandb_dir: '/mnt/bn/vgfm2/test_dit/weijia/outputs'
+  wandb_dir: ""
 
 experiment:
     project: "training_new"
-    name: "show-o-training-stage3_original_3node_newdata_3_100kiters_fsdp"
-    output_dir: "/mnt/bn/vgfm2/test_dit/weijia/outputs2/show-o-training-stage3_original_3node_newdata_3_100kiters_fsdp"
+    name: ""
+    output_dir: ""
     max_train_examples_t2i: 20000000
     max_train_examples_mmu: 40000000
     save_every: 2000
@@ -16,19 +16,13 @@ experiment:
     generate_every: 1000
     log_every: 50
     log_grad_norm_every: 500
-    load_ckpt: "/mnt/bn/vgfm2/test_dit/weijia/outputs_0513/show-o-training-journey_drpo_beta_0_2_bs6_all_kinds_beta_0_2_512_no_ckpt_again/checkpoint-3001/unwrapped_model/pytorch_model.bin"
+    load_ckpt: ""
  
     resume_from_checkpoint: false
     use_fsdp: false
     use_moe: false
     use_lora: false
-    # file_path: "/mnt/bn/vgfm2/test_dit/weijia/outputs17/output_grpo_beta_0_2_5k.jsonl"
-    # file_path: "/mnt/bn/vgfm2/test_dit/weijia/outputs17/flux.jsonl"
-    tag: "counting"
-    # tag: "colors"
-    # tag: "position"
-    # tag: "two_object"
-    # tag: "color_attr"
+
 
 model:
     vq_model:

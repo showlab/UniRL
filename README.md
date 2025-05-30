@@ -17,13 +17,16 @@ In this work, we introduce UniRL, a self-improving post-training approach. Our a
 <br/>
 
 ## TODO
-- [X] Release the inference code.
-- [ ] Release the training code.
+- [X] Release the inference code of T2I.
+- [ ] Release the inference code of MMU.
+- [ ] Release the training code of SFT.
+- [ ] Release the training code of GRPO.
 
 ## Hugging Face models
 
-The Show-o checkpoints can be found on [Hugging Face](https://huggingface.co/benzweijia/UniRL):
+The UniRL checkpoints can be found on [Hugging Face](https://huggingface.co/benzweijia/UniRL):
 
+The original Show-o checkpoints can be found on [Hugging Face](https://huggingface.co/showlab/show-o-512x512):
 
 ## Getting Started
 First, set up the environment:
@@ -34,6 +37,8 @@ Login your wandb account on your machine or server.
 ```
 wandb login <your wandb keys>
 ```
+Then you need to set up the environment of GenEval, please check (https://github.com/djghosh13/geneval)
+
 Test GenEval benchmark for **Text to Image Generation** and you can view the results on wandb.
 ```
 sh run_eval.sh
