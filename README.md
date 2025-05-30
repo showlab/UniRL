@@ -24,7 +24,7 @@ In this work, we introduce UniRL, a self-improving post-training approach. Our a
 
 ## Hugging Face models
 
-The UniRL checkpoints can be found on [Hugging Face](https://huggingface.co/benzweijia/UniRL):
+The UniRL checkpoints of GRPO can be found on [Hugging Face](https://huggingface.co/benzweijia/UniRL):
 
 The original Show-o checkpoints can be found on [Hugging Face](https://huggingface.co/showlab/show-o-512x512):
 
@@ -38,6 +38,8 @@ Login your wandb account on your machine or server.
 wandb login <your wandb keys>
 ```
 Then you need to set up the environment of GenEval, please check (https://github.com/djghosh13/geneval)
+
+Update the config in `configs/showo_gen_eval_cycle_512.yaml`. Change the checkpoint path and output path.
 
 Test GenEval benchmark for **Text to Image Generation** and you can view the results on wandb.
 ```
